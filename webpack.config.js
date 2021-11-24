@@ -42,6 +42,20 @@ module.exports = {
           from: path.resolve(sourceDir, 'style.css'),
           to: path.resolve(buildDir, 'style.css')
         },
+        {
+          from: path.resolve(sourceDir, 'panel.css'),
+          to: path.resolve(buildDir, 'panel.css')
+        },
+        {
+          from: '*.gif',
+          context: path.resolve(__dirname, 'src'),
+          to: path.resolve(__dirname, './dist')
+        },
+        {
+          from: '*.jpg',
+          context: path.resolve(__dirname, 'src'),
+          to: path.resolve(__dirname, './dist')
+        },
       ]
     })
   ],
