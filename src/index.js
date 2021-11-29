@@ -12,7 +12,7 @@ const obj = {
   blocked: false,
 };
 function getValue() {
-  const element = document.querySelector(`.${mainInput.value}`);
+  const element = document.querySelector(mainInput.value);
   obj.current = element;
 }
 
